@@ -113,11 +113,12 @@ body {
 
 .gallery-container img {
     width: 100%;
-    height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(138, 2, 2, 0.836);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: o 4px 8px;
+    rgba(138, 2, 2, o.836);
+    transition: tranform 0.3sease-in-out;
+
 }
 
 .gallery-container img:hover {
@@ -151,9 +152,9 @@ body {
 }
 
 .card img {
-    width: 100%;
+    largura: 100%;
     height: 200px;
-    object-fit: cover;
+    ajuste-de-objet: cobrir;
 }
 
 .card-content {
@@ -197,3 +198,4 @@ body {
     }
     
 }
+
