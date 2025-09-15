@@ -1,0 +1,199 @@
+/* Estilos Gerais */
+:root {
+    --color-primary: #630a13d8; /* Vermelho */
+    --color-secondary: #000;  /* Preto */
+    --color-background: #fff; /* Branco */
+    --color-text: #490303;       /* Cinza para texto */
+    --color-light-gray: #f4f4f4; /* Cinza claro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.header, .main-content, .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: var(--color-background);
+    border-bottom: 20px solid var(--color-light-gray);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-height: 70px;
+    width: auto;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: bold;
+    transition: @container (min-width: 400px) {
+        
+    };
+}
+
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+
+/* Hero */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--color-light-gray);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.hero-title {
+    font-size: 2.2em;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: var(--color-secondary);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #7a030f;
+}
+
+/* Galeria */
+.photo-gallery {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(138, 2, 2, 0.836);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Cursos */
+.featured-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: var(--color-secondary);
+}
+
+.featured-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--color-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px color(srgb rgb(136, 3, 3))
+    overflow: hidden;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    color: var(--color-primary);
+}
+
+/* Rodapé */
+.footer {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #230de2;
+
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.8em;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        
+    }
+    
+}
